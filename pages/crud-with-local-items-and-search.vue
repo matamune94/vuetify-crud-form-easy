@@ -2,6 +2,7 @@
   <v-row justify="center" align="center">
     <v-col cols="12">
       <h4>Crud with local items and search</h4>
+      <GitLink :path="$route.name" />
       <Crud ref="crudWithSearch" :config="crudDemo" :local-items="localItems">
         <template #searchBar>
           <v-text-field
